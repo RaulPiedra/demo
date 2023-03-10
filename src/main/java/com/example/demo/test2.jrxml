@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="test2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="09595ce8-192b-46ea-bfa2-4de1672c388c">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+    <queryString language="SQL">
+        <![CDATA[SELECT * FROM usuario]]>
+    </queryString>
+    <field name="nombre" class="java.lang.Object">
+        <property name="com.jaspersoft.studio.field.name" value="nombre"/>
+        <property name="com.jaspersoft.studio.field.label" value="nombre"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="usuario"/>
+    </field>
+    <field name="apellido" class="java.lang.Object">
+        <property name="com.jaspersoft.studio.field.name" value="apellido"/>
+        <property name="com.jaspersoft.studio.field.label" value="apellido"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="usuario"/>
+    </field>
+    <group name="nombre">
+        <groupExpression><![CDATA[$F{nombre}]]></groupExpression>
+    </group>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="79" splitType="Stretch"/>
+    </title>
+    <pageHeader>
+        <band height="35" splitType="Stretch"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="61" splitType="Stretch">
+            <staticText>
+                <reportElement x="148" y="0" width="100" height="30" uuid="ce39f8b6-780a-4e7a-92d4-db6e271b4c97">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="992fc2b3-5f2c-4312-83c2-76f10674a0e2"/>
+                </reportElement>
+                <text><![CDATA[nombre]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="314" y="0" width="100" height="30" uuid="2a080fa5-9bb2-4259-b45e-9375777473b7">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="73dbf781-df53-44d9-b8bb-1ba94c552ef4"/>
+                </reportElement>
+                <text><![CDATA[apellido]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="125" splitType="Stretch">
+            <textField>
+                <reportElement x="148" y="51" width="100" height="30" uuid="c8f5245b-4534-4598-a805-03a6f297bf0a">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="992fc2b3-5f2c-4312-83c2-76f10674a0e2"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="314" y="61" width="100" height="30" uuid="087d25a6-1800-4746-84da-4d74b0077f00">
+                    <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="73dbf781-df53-44d9-b8bb-1ba94c552ef4"/>
+                </reportElement>
+                <textFieldExpression><![CDATA[$F{apellido}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="54" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>

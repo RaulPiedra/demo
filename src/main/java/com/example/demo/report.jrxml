@@ -16,18 +16,21 @@
         <band height="35" splitType="Stretch"/>
     </pageHeader>
     <columnHeader>
-        <band height="61" splitType="Stretch"/>
-    </columnHeader>
-    <detail>
-        <band height="125" splitType="Stretch">
+        <band height="61" splitType="Stretch">
             <textField>
-                <reportElement x="0" y="0" width="100" height="20"/>
-                <textElement/>
-                <textFieldExpression class="java.lang.String">
-                    <![CDATA[$F{name}]]></textFieldExpression>
+                <reportElement x="195" y="22" width="100" height="30" uuid="fcce6797-5f9f-45e9-abca-c25a80fee02c"/>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
             </textField>
         </band>
-
+    </columnHeader>
+    <detail>
+        <band height="61" splitType="Stretch">
+            <textField>
+                <reportElement x="195" y="22" width="100" height="30" uuid="fcce6797-5f9f-45e9-abca-c25a80fee02c"/>
+                <textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+            </textField>
+        </band>
+        <band height="125" splitType="Stretch"/>
     </detail>
     <columnFooter>
         <band height="45" splitType="Stretch"/>
